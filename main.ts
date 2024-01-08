@@ -37,4 +37,4 @@ const sum = 30000
 
 const order = new Order({user, address, sum});
 
-console.log(order);
+console.log(order.getInfoOrder());
