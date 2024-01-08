@@ -37,4 +37,6 @@ const sum = 30000
 
 const order = new Order({user, address, sum});
 
+order.newAddress = "Pavlodar city, st Kutuzov 1-1";
+
 console.log(order.getInfoOrder());
