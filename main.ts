@@ -1,3 +1,4 @@
+import { Order } from './src/models/Order';
 // // // import { addTest, test } from "./src/scripts/8-1";
 
 // // // addTest()
@@ -28,7 +29,12 @@
 // import {finishMaxSeason} from "./src/scripts/8/working";
 
 // console.log(`Самый прибыльный сезон, ` , finishMaxSeason);
+// import { Order } from "./src/models/Order"
 
 const user = "Victor Mash"
 const address = "Pavlodar city"
 const sum = 30000
+
+const order = new Order({user, address, sum});
+
+console.log(order);
