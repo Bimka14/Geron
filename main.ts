@@ -1,42 +1,48 @@
-import { Order } from './src/models/Order';
-// // // import { addTest, test } from "./src/scripts/8-1";
+// import { Order } from './src/models/Order';
+// // // // import { addTest, test } from "./src/scripts/8-1";
 
-// // // addTest()
-// // // console.log(test);
+import { Products } from "./src/models/Products";
 
-// // // import * as test from "./src/scripts/8-1";
-// // // test.addTest();
+// // // // addTest()
+// // // // console.log(test);
 
-// // // import addTest from "./src/scripts/8-1";
+// // // // import * as test from "./src/scripts/8-1";
+// // // // test.addTest();
 
-// // const office = {
-// //     tech:{
-// //         employeeCount: 15,
-// //         avgSallary: 200000
-// //     },
-// //     design:{
-// //         employeeCount: 10,
-// //         avgSallary: 400000
-// //     }
-// // }
+// // // // import addTest from "./src/scripts/8-1";
 
-// // let avgSallaryOffice = 0
+// // // const office = {
+// // //     tech:{
+// // //         employeeCount: 15,
+// // //         avgSallary: 200000
+// // //     },
+// // //     design:{
+// // //         employeeCount: 10,
+// // //         avgSallary: 400000
+// // //     }
+// // // }
 
-// // Object.entries(office).forEach(([part,partInfo]) => {
-// //     console.log(part,partInfo)
-// // })
+// // // let avgSallaryOffice = 0
 
-// import {finishMaxSeason} from "./src/scripts/8/working";
+// // // Object.entries(office).forEach(([part,partInfo]) => {
+// // //     console.log(part,partInfo)
+// // // })
 
-// console.log(`Самый прибыльный сезон, ` , finishMaxSeason);
-// import { Order } from "./src/models/Order"
+// // import {finishMaxSeason} from "./src/scripts/8/working";
 
-const user = "Victor Mash"
-const address = "Pavlodar city"
-const sum = 30000
+// // console.log(`Самый прибыльный сезон, ` , finishMaxSeason);
+// // import { Order } from "./src/models/Order"
 
-const order = new Order({user, address, sum});
+// const user = "Victor Mash"
+// const address = "Pavlodar city"
+// const sum = 30000
 
-order.newAddress = "Pavlodar city, st Kutuzov 1-1";
+// const order = new Order({user, address, sum});
 
-console.log(order.getInfoOrder());
+// order.newAddress = "Pavlodar city, st Kutuzov 1-1";
+
+// console.log(order.getInfoOrder());
+
+let products = new Products()
+
+console.log(products.allStorages)
