@@ -19,7 +19,7 @@ export class Storages{
         return this._data
     }
 
-    getStorage(id:number):TStorages {
+    protected getStorage(id:number):TStorages {
         return this._data.find((item=>{ item.id===id}))
     }
 
@@ -30,7 +30,7 @@ export class Storages{
         })
     }
 
-    setProducts(id:number, product:TProducts){
+    protected setProducts(id:number, product:TProducts){
         const storage = this.getStorage(id)
         storage.products.push(product)
         this.updateStorage = storage
